@@ -1,0 +1,11 @@
+document.querySelectorAll("#head-row")[0].remove();
+document.querySelectorAll(".product-placement").forEach(el => el.remove());
+document.querySelectorAll(".thumbnails")[0].previousElementSibling.remove();
+document.querySelectorAll(".thumbnails").forEach(el => el.remove());
+document.querySelectorAll(".product-card-list")[0].previousElementSibling.remove();
+document.querySelectorAll(".product-card-list").forEach(el => el.remove());
+document.querySelectorAll(".pull-quote").forEach(el => el.remove());
+
+let author = document.querySelectorAll(".post-byline a")[0].innerText;
+document.getElementsByClassName("post-meta")[0].innerText = author;
+document.getElementsByClassName("post-meta")[0].classList.add("post-byline");
